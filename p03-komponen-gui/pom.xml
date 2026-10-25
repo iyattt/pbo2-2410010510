@@ -11,11 +11,12 @@
         <exec.mainClass>id.ac.uniska.pbo2.p03.P03KomponenGui</exec.mainClass>
     </properties>
     
-    <dependencies>
-        <dependency>
-<groupId>com.formdev</groupId>
-<artifactId>flatlaf</artifactId>
-<version>3.7.2</version>
-</dependency>
-    </dependencies> 
+<dependencies>
+    <dependency>
+        <groupId>com.formdev</groupId>
+        <artifactId>flatlaf</artifactId>
+        <version>3.5.4</version>
+    </dependency>
+</dependencies>
+
 </project>
