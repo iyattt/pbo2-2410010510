@@ -36,7 +36,7 @@ public class HaloSwing extends javax.swing.JFrame {
         setTitle("Halo Swing");
 
         pesanLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        pesanLabel.setText("Selamat Belajar Java Swing!");
+        pesanLabel.setText("Halo, Swing dan FlatLaf!");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -44,15 +44,15 @@ public class HaloSwing extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(pesanLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pesanLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addComponent(pesanLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
-                .addGap(47, 47, 47))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(pesanLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 288, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -67,7 +67,6 @@ FlatLightLaf.setup();
 // Tampilkan form di Event Dispatch Thread
 java.awt.EventQueue.invokeLater(() -> new HaloSwing().setVisible(true));
 }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel pesanLabel;
     // End of variables declaration//GEN-END:variables
