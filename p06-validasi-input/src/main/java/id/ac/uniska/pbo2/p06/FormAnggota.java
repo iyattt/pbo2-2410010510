@@ -335,6 +335,11 @@ public class FormAnggota extends javax.swing.JFrame {
                 hpFieldFocusLost(evt);
             }
         });
+        hpField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                hpFieldKeyTyped(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 11;
@@ -436,6 +441,15 @@ if (!Character.isDigit(evt.getKeyChar()) || penuh) {
     private void daftarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_daftarButtonActionPerformed
         daftar();
     }//GEN-LAST:event_daftarButtonActionPerformed
+
+    private void hpFieldKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_hpFieldKeyTyped
+        boolean penuh = hpField.getText().length() >= 13
+        && hpField.getSelectedText() == null;
+
+if (!Character.isDigit(evt.getKeyChar()) || penuh) {
+    evt.consume();
+}
+    }//GEN-LAST:event_hpFieldKeyTyped
 
     /**
      * @param args the command line arguments

@@ -51,6 +51,11 @@ public class UjiValidator {
                 Validator.nomorHp("6281234567890"), false);
         cek("Nomor HP 12 digit",
                 Validator.nomorHp("081234567890"), true);
+        cek("Nama mengandung angka",
+        Validator.nama("Siti123"), false);
+
+        cek("Nama tanpa angka",
+        Validator.nama("Siti Rahmah"), true);
 
         System.out.println();
 
